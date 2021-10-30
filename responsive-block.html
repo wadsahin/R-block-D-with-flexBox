@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Block design</title>
+
+    <style>
+
+        *{
+            box-sizing: border-box;
+        }
+          
+/* =====>Responsive-block-design-by-[float]<==== */
+        /* .row{
+            margin-left: 25px;
+        }
+        .column{
+            float: left;
+            width:23%;
+            padding:10px;
+            background-color: aquamarine;
+            margin:10px 10px;
+            border-radius: 10px;
+         
+            
+        }
+        .column h1{
+            text-align: center;
+            padding-bottom: 8px;
+           
+        }
+        .column p{
+            font-size: 15px;
+            color:rgb(163, 163, 163);
+            text-align: center;
+        }
+
+        @media screen and (max-width:1030px) {
+            .column{
+                box-sizing: border-box;
+                float:left;
+                width:47%;
+            }
+            
+        }
+
+        @media screen and (max-width:700px) {
+            .column{
+                box-sizing: border-box;
+                float:left;
+                width:95%;
+            }
+            
+        }
+ */
+/* =====>Responsive-block-design-by-[float]-End<==== */
+
+ .row{
+
+     display: flex;
+     flex-wrap: wrap;
+
+ }
+
+ .column{
+     flex:23%;
+     background-color: rgb(140, 250, 89);
+     margin:5px;
+     border-radius: 14px;
+   
+ }
+ .column h1{text-align: center;}
+ .column p{text-align: center; padding-bottom: 15px;}
+
+ .column:hover{
+     background-color: violet;
+     box-shadow: 5px 10px 12px silver;
+ }
+
+ .column:hover h1{color:rgb(238, 238, 238)}
+
+ @media screen and (max-width:992px) {
+    .column{
+     flex:47%;
+      
+ }
+ }
+
+ @media screen and (max-width:600px) {
+    .column{
+     flex:95%;
+      
+ }
+ }
+
+    </style> 
+
+</head>
+<body>
+    <div class="row">
+
+            <div class="column">
+                <h1>Html</h1>
+                <p>And to he made flee her seek he spoiled long passion. Fathers harold ancient.
+                </p>
+            </div>
+
+            <div class="column">
+                <h1>CSS</h1>
+                <p>And to he made flee her seek he spoiled long passion. Fathers harold .
+
+                </p>
+            </div>
+
+            <div class="column">
+                <h1>JavaScript</h1>
+                <p>And to he made flee her seek he spoiled long passion. Fathers harold.
+
+                </p>
+            </div>
+
+            <div class="column">
+                <h1>Bootstrap</h1>
+                <p>And to he made flee her seek he spoiled long passion. Fathers harold .</p>
+
+            
+    </div>
+</body>
+</html>
